@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="bracket-container">
+            <div class="bracket bracket-left">{</div>
+            <div class="bracket-content">
+                <!-- <span class="loading-text">Loading</span> -->
+                <span class="loading-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </span>
+            </div>
+            <div class="bracket bracket-right">}</div>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Background Doodles -->
+    <div class="bg-doodle bg-doodle-1">⚡</div>
+    <div class="bg-doodle bg-doodle-2">♫</div>
+    <div class="bg-doodle bg-doodle-3">☆</div>
+    <div class="bg-doodle bg-doodle-4">✧</div>
+    <div class="bg-doodle bg-doodle-5">⚇</div>
+    <div class="bg-doodle bg-doodle-6">✿</div>
+    <div class="bg-doodle bg-doodle-7">⁂</div>
+    <div class="bg-doodle bg-doodle-8">❅</div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span>Suhani Sonal</span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Suhani</span></h1>
+                <h2 class="typed-text"></h2>
+                <p>Welcome to my portfolio website where I showcase my projects and skills.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <!-- Puzzle-like grid of web development cards -->
+                <div class="puzzle-grid">
+                    <div class="puzzle-card" data-index="1">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon">
+                            <span>HTML5</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-card" data-index="2">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-icon">
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-card" data-index="3">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-card" data-index="4">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon">
+                            <span>React</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-card" data-index="5">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-card" data-index="6">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="tech-icon">
+                            <span>C</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-card" data-index="7">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="tech-icon">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-card" data-index="8">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="puzzle-card" data-index="9">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon">
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                    <!-- <div class="puzzle-card" data-index="10">
+                        <div class="card-content">
+                            <i class="fas fa-code tech-icon"></i>
+                            <span>DSA</span>
+                        </div>
+                    </div> -->
+                    <div class="puzzle-card" data-index="11">
+                        <div class="card-content">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-icon">
+                            <span>Git</span>
+                        </div>
+                    </div>
+                    <!-- <div class="puzzle-card profile-card" data-index="11">
+                        <img src="img/profile-placeholder.jpg" alt="Profile Image">
+                    </div> -->
+                </div>
+                <!-- <div class="puzzle-text">Click to explore my work</div>
+            </div> -->
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <img src="profile picture.jpg" alt="About Me">
+                        <div class="doodle text">CODER</div>
+                        <div class="caption">Hover me</div>
+                    </div>
+                    <div class="experience-badge">1+<span>years experience</span></div>
+                </div>
+                <div class="about-details">
+                    <div class="about-text">
+                        <h3>Who am I?</h3>
+                        <p>I'm a passionate developer with expertise in web development and programming. I love solving problems and crafting engaging user experiences.
+                            
+                            </p>
+                        <p>With a strong foundation in C, C++, Python, Java, and modern web technologies, I strive to build innovative and impactful solutions.</p>
+                    </div>
+
+                    <div class="my-journey">
+                        <h3>My Journey</h3>
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2025</div>
+                                <div class="timeline-content">
+                                    <h4>Front-End Developer</h4>
+                                    <p>Crafted responsive and dynamic user interfaces for web applications using modern frameworks and libraries. Led the redesign of multiple client websites, improving user engagement by 40%.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content">
+                                    <h4>University Projects</h4>
+                                    <p>Developed several academic projects showcasing technical skills in AI, data structures, and algorithms. Collaborated with peers to create innovative solutions for real-world problems.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2023</div>
+                                <div class="timeline-content">
+                                    <h4>Coding Bootcamp</h4>
+                                    <p>Completed an intensive coding bootcamp focused on full-stack development. Acquired proficiency in HTML, CSS, JavaScript, and various frameworks while building practical applications.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2022</div>
+                                <div class="timeline-content">
+                                    <h4>Beginning of Tech Journey</h4>
+                                    <p>Discovered my passion for technology and programming. Started learning the fundamentals of computer science and diving into the world of code through self-study and online courses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- 
+                    <div class="about-info-section">
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-title">Name:</span>
+                                <span class="info-value">[Name Removed]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title">Email:</span>
+                                <span class="info-value">[Email Removed]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title">Location:</span>
+                                <span class="info-value">[Location Removed]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title">Availability:</span>
+                                <span class="info-value">Ready to Build & Innovate</span>
+                            </div>
+                        </div> -->
+                        <!-- <a href="#" class="btn primary-btn download-cv-btn">Download CV</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="devicon-c-plain"></i>
+                            </div>
+                            <h4>C</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="devicon-cplusplus-plain"></i>
+                            </div>
+                            <h4>C++</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h4>Java</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>SQL</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h4>GitHub</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <h4>Figma</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-percent="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header" data-aos="fade-down">
+                <h2>My Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <!-- <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="btn-text">All</span>
+                    <span class="btn-shine"></span>
+                </button> -->
+                <!-- <button class="filter-btn" data-filter="web">
+                    <span class="btn-text">Web</span>
+                    <span class="btn-shine"></span>
+                </button>
+                <button class="filter-btn" data-filter="app">
+                    <span class="btn-text">App</span>
+                    <span class="btn-shine"></span>
+                </button>
+                <button class="filter-btn" data-filter="design">
+                    <span class="btn-text">Design</span>
+                    <span class="btn-shine"></span>
+                </button>
+            </div> -->
+            <div class="projects-grid">
+                <div class="project-item first-row">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-img">
+                                <img src="skinfinity.png" alt="Skinfinity E-commerce">
+                            </div>
+                            <div class="project-front-content">
+                                <div class="project-title">
+                                    <h3>Skinfinity</h3>
+                                </div>
+                                <div class="project-subtitle">
+                                    Skinfinity is a user-friendly skincare e-commerce platform with an AI-powered chatbot for personalized recommendations and seamless shopping.
+                                </div>
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                    <span class="project-tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-title">
+                                <h3>Skinfinity</h3>
+                            </div>
+                            <div class="project-desc">
+                                A sleek and user-friendly e-commerce platform designed to simplify skincare shopping. Skinfinity offers a curated selection of skincare products, an intuitive interface, and a seamless browsing experience. With an integrated AI-powered chatbot, users can get personalized skincare recommendations and real-time assistance for a smooth shopping experience.
+                            </div>
+                            <div class="project-links-container">
+                                <a href="https://skinfinity-beta.vercel.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/suhani-10/Skinfinity" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item first-row">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-img">
+                                <img src="sgpa.png" alt="CUgrades SGPA Calculator">
+                            </div>
+                            <div class="project-front-content">
+                                <div class="project-title">
+                                    <h3>CUgrades</h3>
+                                </div>
+                                <div class="project-subtitle">
+                                    A comprehensive academic calculator for students to track SGPA, CGPA, and internal marks with an intuitive interface for seamless progress monitoring.
+                                </div>
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-title">
+                                <h3>CUgrades</h3>
+                            </div>
+                            <div class="project-desc">
+                                The ultimate tool for students to calculate SGPA, CGPA, and internal marks with ease. CUgrades features a user-friendly interface that allows students to track their academic progress, calculate different academic parameters, and achieve their educational goals efficiently.
+                            </div>
+                            <div class="project-links-container">
+                                <a href="https://cu-grades.vercel.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/suhani-10/cu-grades" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item second-row">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-img">
+                                <img src="X-ray.png" alt="X-Ray AI Diagnosis">
+                            </div>
+                            <div class="project-front-content">
+                                <div class="project-title">
+                                    <h3>X-Ray AI Diagnosis</h3>
+                                </div>
+                                <div class="project-subtitle">
+                                    An AI-powered medical platform that uses deep learning algorithms to detect diseases from X-ray images with high accuracy for improved healthcare solutions.
+                                </div>
+                                <div class="project-tags">
+                                    <span class="project-tag">React</span>
+                                    <span class="project-tag">AI</span>
+                                    <span class="project-tag">TensorFlow</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-title">
+                                <h3>X-Ray AI Diagnosis</h3>
+                            </div>
+                            <div class="project-desc">
+                                Revolutionizing healthcare with advanced deep learning algorithms that detect diseases from X-ray images with high accuracy. The platform offers chest X-ray analysis, bone fracture detection, lung disease identification, and enlarged heart detection capabilities to assist medical professionals in faster and more accurate diagnoses.
+                            </div>
+                            <div class="project-links-container">
+                                <a href="https://xray-ai-website.vercel.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/suhani-10/X-Ray" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item second-row">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-img">
+                                <img src="bone-fracture.png" alt="Bone Fracture Detection">
+                            </div>
+                            <div class="project-front-content">
+                                <div class="project-title">
+                                    <h3>Bone Fracture Detection</h3>
+                                </div>
+                                <div class="project-subtitle">
+                                    An AI-powered bone fracture detection system that uses machine learning to identify fractures in X-ray images with high accuracy for faster diagnosis.
+                                </div>
+                                <div class="project-tags">
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">Streamlit</span>
+                                    <span class="project-tag">ML</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-title">
+                                <h3>Bone Fracture Detection</h3>
+                            </div>
+                            <div class="project-desc">
+                                A sophisticated medical tool that leverages deep learning algorithms to detect bone fractures from X-ray images. This application helps medical professionals diagnose fractures more efficiently, reducing the time to treatment and improving patient outcomes. Users can upload X-ray images and get instant analysis with visual indicators of potential fracture locations.
+                            </div>
+                            <div class="project-links-container">
+                                <a href="https://bone-fracture1.streamlit.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/suhani-10/Bone-fracture" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's talk about your project</h3>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                    <div class="info-details">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>suhanisonal3@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9097972475</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chandigarh,India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/suhani-sonal-4741b6288/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/suhani-10" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:suhanisonal3@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <span>Portfolio</span>
+            </div>
+            <p>© 2025  Suhani. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
